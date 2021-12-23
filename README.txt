@@ -19,3 +19,6 @@ HOW TO RUN WEBSITE:
 	To access Admin page: goto localhost:8000/admin
 		Admin Username: admin
 		Admin Password: admin@123456
+
+13. Deactivate virtual environment when done using:
+	deactivate
