@@ -1,0 +1,42 @@
+{% extends 'services/base.html' %}
+
+
+{% block content %}
+
+	<!-- Page Title -->
+	<center>
+
+		{% if searched %}
+
+			<h1>Search Results for {{ searched }}:</h1>
+			<br/>
+
+			{% for provider in providers %}
+
+				<a href="{% url 'provider-profile' '#' %}">{{provider}}</a>
+				<br/><br/>
+
+			{% endfor %}
+
+		{% else %}
+			<h1>No Search Terms entered.</h1>
+			<br/>
+
+		{% endif %}
+
+
+
+		<form class="d-flex" method=POST action="{% url 'search-providers' %}">
+
+			{% csrf_token %}
+
+        	<input class="form-control me-2" type="search" placeholder="Search Providers" aria-label="Search" name="searched">
+        	<button class="btn btn-outline-primary" type="submit">Search</button>
+      	</form>
+
+
+	</center>
+
+
+
+{% endblock %}

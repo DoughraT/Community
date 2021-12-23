@@ -1,0 +1,74 @@
+{% extends 'services/base.html' %}
+
+
+{% block content %}
+
+	<!-- Home Page Title -->
+	<center>
+
+		<h1>All Available Neighborhood Services:</h1>
+
+		<br/>
+
+		<form class="d-flex" method=POST action="{% url 'search-providers' %}">
+
+			{% csrf_token %}
+
+        	<input class="form-control me-2" type="search" placeholder="Search Providers" aria-label="Search" name="searched">
+        	<button class="btn btn-outline-primary" type="submit">Search</button>
+      	</form>
+
+	</center>
+
+	<br/>
+
+
+	<!-- Retrieve all services in database and display them in a card -->
+
+		<div class="row">
+
+			{% for service in service_list %}
+
+		 	<div class="col-sm-4">
+		    <div class="card">
+
+		    	{% if service.title_image %}
+		    		<img src="{{ service.title_image.url }}" class="card-img-top" alt="...">
+
+		    	{% else %} 
+		    		<img src="/media/images/R.jfif" class="card-img-top" alt="...">
+
+		    	{% endif %}
+
+
+
+		     	<div class="card-body">
+		     	<center>
+		       	<h5 class="card-title">{{ service }}</h5>
+		       </center>
+		        <p class="card-text">
+		        	<ul>
+					<li>Service Type: {{ service.service_type }}</li>
+					<li>Address: {{ service.address}},{{ service.postal_code }} </li>
+					<li>Provider: {{ service.provider }}</li>
+					<li>Description: {{ service.description }}</li>
+					</ul>
+		        </p>
+
+		        <center>
+		        <a href="#" class="btn btn-primary">See Details</a>
+		    	</center>
+		    	</div>
+		    </div>
+
+			</div>
+
+			{% endfor %}
+
+		</div>
+
+		<br/>
+
+
+
+{% endblock %}
