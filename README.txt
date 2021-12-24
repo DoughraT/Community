@@ -1,6 +1,12 @@
+Group:
+-Dora Tan, dora.tan@ucalgary.ca
+-Karmvir Singh Dhaliwal, karmvir.dhaliwal@ucalgary.ca
+-Ranadip Chatterjee, ranadip.chatterjee@ucalgary.ca
+
+
 HOW TO RUN WEBSITE:
 
-1. Install Python 
+1. Install Python 3.9 (Newest updated Python)
 2. Install Gitbash (https://gitforwindows.org/)
 3. Download folders from Github
 4. Unzip downloaded package
@@ -22,3 +28,17 @@ HOW TO RUN WEBSITE:
 
 13. Deactivate virtual environment when done using:
 	deactivate
+
+
+Troubleshooting:
+If the above does not work, you will need to change the python path to match where you installed pyton on your own device.
+
+1. Find the path where your python.exe is installed in your own system
+2. Copy that path
+3. Go into community-main/virt/ and open pyvenv.cfg in any editor and past the path from step 1 into the file and save
+
+
+What we have available on the website:
+-User login, logout and registration
+-Search service providers
+-Add services to the website
