@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from . forms import RegisterUserForm
+from services.models import User
 
 # Create your views here.
 
@@ -38,6 +39,14 @@ def register_user(request):
 		form = RegisterUserForm(request.POST)
 
 		if form.is_valid():
+			# Save this in the Service/User Table
+			u = User(first_name = form.cleaned_data['first_name'],
+				last_name = form.cleaned_data['last_name'],
+				email = form.cleaned_data['email'],
+				address = form.cleaned_data['address'],
+				postal_code = form.cleaned_data['postal_code'],
+				phone = form.cleaned_data['phone'])
+			u.save()
 			form.save()
 			username = form.cleaned_data['username']
 			password = form.cleaned_data['password1']
