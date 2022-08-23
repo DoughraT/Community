@@ -1,64 +1,58 @@
-<h1 align="center">CanvUs - Digital Collaborative Whiteboard</h1>
+<h1 align="center">Community - Neighboorhood Services</h1>
 
-<p align="center"> Related Course: SENG 513 ‑ Web‑Based Systems | Group 23 </p>
+<p align="center">Related Course: CPSC 571 - Design and Implementation of Database Systems</p>
 
-<p> A virtual whiteboard space in which various users may come together in order to digitally collaborate by using the team space to visually repre‑
-sent ideas and processes and discuss them in real‑time with an implemented chat function. Created and designed using <b>Figma</b>. 
- 
-  For more information and details, project intermediate and final reports can be found in PDF format in the repository. </p>
-
-A video demo of the project may be seen here: [**CanvUs Final Project Demo**](https://drive.google.com/file/d/173lbiIBEGcsPXE75OzFrRbzrDjxaGjR4/view?usp=sharing).
+<p> Mobile friendly web‑based app that acts as an online community posting board for services offered by residents living the neighborhood such
+as babysitting, tutoring, catering, and plumbing services with options for service receivers to provide ratings and comments.
 
 <br></br>
 
 # Starting the Application
-1. Have two terminals open
-2. Ensure Port 2222 is free and open as it is the port the server runs on.
-3. In terminal 1 CD to `SENG513_Canvas_Project/`
-4. Run `npm install`
-5. Run `npm start`
-6. In terminal 2 CD to `SENG513_Canvas_Project/server`
-7. Run `node index.js`
-8. Navigate to localhost:3000 in your browser
+1. Install Python 3.9 (Newest updated Python). <br>
+2. Install Gitbash (https://gitforwindows.org/). <br>
+3. Download folders from Github. <br>
+4. Unzip downloaded package. <br>
+5. Open Gitbash and locate Community-main. <br>
+6. In dir with community_website & virt run the following command to activate the virtual environment: `source virt/Scripts/activate` <br>
+7. pip install django (for latest version). <br>
+8. pip install pillow. <br>
+9. Move into community_website folder - should see the manage.py file. <br>
+10. Run the server using the following command: `python manage.py runserver` <br>
+11. On web browser go to localhost:8000. <br>
+12. Website should be up. <br>
+        To access Admin page: goto localhost:8000/admin <br>
+            Admin Username: admin <br>
+            Admin Password: admin@123456 <br>
+13. Deactivate virtual environment when done using: `deactivate`.
 
 <br></br>
 
-## Built With
-<p> For more information on how these techonologies and languages were used, please refer to the Final Report. </p>
+# Troubleshooting
+If the above installation process does not work, you will need to change the python path to match where you installed pyton on your own device.
 
-- React
-- Bootstrap
-- HTML
-- CSS
-- SASS
-- Socket IO
-- BCrypt
-- Node.js
-- MongoDB
+1. Find the path where your python.exe is installed in your own system. <br>
+2. Copy that path. <br>
+3. Go into `community-main/virt/` and open `pyvenv.cfg` in any editor and past the path from step 1 into the file and save.
 
 <br></br>
 
-## Functionalities Implemented
-1. Create a new account with CanvUs. <br>
-2. Login to a previously created account. <br>
-3. View previously created and shared canvases. <br>
-4. Create a new canvas with a unique name. <br>
-5. Add other users to the canvas. <br>
-6. Draw on the Canvas. <br>
-7. Change the colour of their brush strokes. <br>
-8. Change the size of the brush strokes. <br>
-9. Chat with other active users. <br>
-10. Export their saved canvases as a PNG file. <br>
-
+# Built With
+- Python
+- Django
 
 <br></br>
 
-## Authors
+# Functionalities Implemented
+- Acocunt registration
+- Login to valid/created accounts
+- User logout
+- Search for services by name or service providers
+- Logged in users may add additional service listings 
 
-[**Kaitlin de Chastelain Finnigan**](https://github.com/kaitlin31415)
+<br></br>
 
-[**Youup (David) Kim**](https://github.com/youup99)
+# Authors
 
-[**Kirk Elumir**](https://github.com/kirkelumir)
+[**Ranadip Chatterjee**](https://github.com/oBhodrolok)
 
 [**Dora Tan**](https://github.com/DoughraT)
