@@ -28,7 +28,7 @@ as babysitting, tutoring, catering, and plumbing services with options for servi
 <br></br>
 
 # Troubleshooting
-If the above installation process does not work, you will need to change the python path to match where you installed pyton on your own device.
+If the above installation process does not work, you will need to change the python path to match where you installed python on your own device.
 
 1. Find the path where your python.exe is installed in your own system. <br>
 2. Copy that path. <br>
