@@ -2,7 +2,7 @@
 
 <p align="center">Related Course: CPSC 571 - Design and Implementation of Database Systems</p>
 
-<p> Mobile friendly web‑based app that acts as an online community posting board for services offered by residents living the neighborhood such
+<p> Mobile friendly web‑based app that acts as an online community posting board for services offered by residents living in the neighborhood such
 as babysitting, tutoring, catering, and plumbing services with options for service receivers to provide ratings and comments.
 
 <br></br>
