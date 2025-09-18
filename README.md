@@ -1,4 +1,4 @@
-<h1 align="center">Community - Neighboorhood Services</h1>
+<h1 align="center">Community - Neighborhood Services Website</h1>
 
 <p align="center">Related Course: CPSC 571 - Design and Implementation of Database Systems</p>
 
